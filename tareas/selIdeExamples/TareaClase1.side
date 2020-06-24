@@ -1,0 +1,382 @@
+{
+  "id": "260a1521-b86d-44c9-b46d-62f39e1164fd",
+  "version": "2.0",
+  "name": "TareaClase1",
+  "url": "https://evening-bastion-49392.herokuapp.com/",
+  "tests": [{
+    "id": "80dc044e-9b1c-44e1-98df-38b2fc31db79",
+    "name": "Create a new song",
+    "commands": [{
+      "id": "abfe97a3-0ddc-4394-a1ec-55b82efabea5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a743ddc3-4eb7-4557-844c-34a00d43dda5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "825x721",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1b05c76d-6ffc-4d58-89dd-ebead5c1e669",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8be0eb5-0920-435c-bffe-5f4136156bae",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=section > h1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "84d6645c-e17b-42e9-9b2a-4641145c6836",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Create a new song",
+      "targets": [
+        ["linkText=Create a new song", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Create a new song')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs/new')]", "xpath:href"],
+        ["xpath=//section/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Create a new song')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44d36f55-2118-4a4d-9612-c1527be060d9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=title",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "b59920ee-f303-4435-a005-83a558192ea4",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1a7f995-8cdd-4ac1-8468-c487592dc003",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Witchcraft"
+    }, {
+      "id": "3967bd5b-d2a3-4a6f-b3e0-58fa8300203d",
+      "comment": "",
+      "command": "click",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51cca081-d4d6-4e29-b0bf-efb1711600ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "129"
+    }, {
+      "id": "b1e97af4-6f90-43a9-8b35-1af8e47ac792",
+      "comment": "",
+      "command": "click",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab83294c-d2f1-45e3-a6ea-ca037984f1b7",
+      "comment": "",
+      "command": "type",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "06/23/2020"
+    }, {
+      "id": "b655cc84-0690-41f4-8c1a-9ada6fea343a",
+      "comment": "",
+      "command": "click",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19142744-c2e3-4509-a78a-b57ab219c5ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Those fingers in my hair\\nThat sly come hither stare\\nThat strips my conscience bare\\nIt's witchcraft.\\nAnd I've got no defense for it,\\nThe heat is too intense for it.\\nWhat good would common sense for it do?\\n'Cause it's witchcraft,\\nWicked witchcraft,\\nAnd although I know it's strictly taboo\\nWhen you arouse the need in me,\\nMy heart says yes indeed in me,\\nProceed with what your leading me to\\nIt's such an ancient pitch,\\nBut one I wouldn't switch,\\n'Cause there's no nicer witch than you"
+    }, {
+      "id": "a3975f10-f8cb-456b-a219-d5ab5d519ee7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=input:nth-child(9)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6d55804d-48ff-4ad7-8ac0-e95385709eda",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(9)",
+      "targets": [
+        ["css=input:nth-child(9)", "css:finder"],
+        ["xpath=//input[@value='Save Song']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f747d453-cba1-41fc-af92-56f31997d1d8",
+    "name": "edit this song",
+    "commands": [{
+      "id": "6947b1cf-ac2a-412c-b12d-4276e7edc0e4",
+      "comment": "",
+      "command": "open",
+      "target": "https://evening-bastion-49392.herokuapp.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f582caa-0617-4fdf-baa1-be3d90d1ff51",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "592x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a0cbab0-6d1f-4a20-abcf-b77753dad35b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "348f04f3-dfe1-4c63-90e1-a453d19b43fe",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Witchcraft",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "b121eb0d-c6a9-41fa-aebc-404d64dfde3a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Witchcraft",
+      "targets": [
+        ["linkText=Witchcraft", "linkText"],
+        ["css=li:nth-child(53) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Witchcraft')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[53]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/175')]", "xpath:href"],
+        ["xpath=//li[53]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Witchcraft')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b7bce42-b645-455a-b350-43111f308374",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=edit this song",
+      "targets": [
+        ["linkText=edit this song", "linkText"],
+        ["css=p:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'edit this song')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs/175/edit')]", "xpath:href"],
+        ["xpath=//p[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'edit this song')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "90edfccc-6de0-4455-a544-f1417a92ef2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "881ceb95-6691-40e2-8d2d-d93dca2093f8",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=song[title]", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Witchcraft Dos"
+    }, {
+      "id": "7bb81fbc-dc5e-4f96-961d-57d3fbfc0e14",
+      "comment": "",
+      "command": "click",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d2abb2e-d801-4494-a1f9-28721851ec4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=length",
+      "targets": [
+        ["id=length", "id"],
+        ["name=song[length]", "name"],
+        ["css=#length", "css:finder"],
+        ["xpath=//input[@id='length']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "130"
+    }, {
+      "id": "3b065068-066c-4d10-a990-1792d288b9ab",
+      "comment": "",
+      "command": "click",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7069960e-c73e-47e0-b2af-23d91c05d184",
+      "comment": "",
+      "command": "type",
+      "target": "id=released_on",
+      "targets": [
+        ["id=released_on", "id"],
+        ["name=song[released_on]", "name"],
+        ["css=#released_on", "css:finder"],
+        ["xpath=//input[@id='released_on']", "xpath:attributes"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "06/23/1920"
+    }, {
+      "id": "f3bf28a9-f687-46ed-af8c-3ec0e4985f3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59ff16c5-c3bb-41a5-beb6-0b0368e1fbc6",
+      "comment": "",
+      "command": "type",
+      "target": "id=lyrics",
+      "targets": [
+        ["id=lyrics", "id"],
+        ["name=song[lyrics]", "name"],
+        ["css=#lyrics", "css:finder"],
+        ["xpath=//textarea[@id='lyrics']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Actualizado Those fingers in my hair\\nThat sly come hither stare\\nThat strips my conscience bare\\nIt's witchcraft.\\nAnd I've got no defense for it,\\nThe heat is too intense for it.\\nWhat good would common sense for it do?\\n'Cause it's witchcraft,\\nWicked witchcraft,\\nAnd although I know it's strictly taboo\\nWhen you arouse the need in me,\\nMy heart says yes indeed in me,\\nProceed with what your leading me to\\nIt's such an ancient pitch,\\nBut one I wouldn't switch,\\n'Cause there's no nicer witch than you"
+    }, {
+      "id": "92000410-8db8-463d-8d88-afa6296613be",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Save Song']", "xpath:attributes"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "46d1e15c-f477-4ea9-bb59-436cf36cb34a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["80dc044e-9b1c-44e1-98df-38b2fc31db79"]
+  }],
+  "urls": ["https://evening-bastion-49392.herokuapp.com/", "https://evening-bastion-49392.herokuapp.com/songs/217"],
+  "plugins": []
+}
